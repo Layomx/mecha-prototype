@@ -1,0 +1,9 @@
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+formatter = { command = "clang-format" }
+auto-format = true
+
+[language-server.clangd]
+command = "clangd"
+args = ["--background-index", "--clang-tidy"]
